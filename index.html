@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TraCaloryApp</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+  <body>
+    <!--Nav Bar-->
+    <nav>
+        <div class="nav-wrapper blue">
+            <div class="container">
+                <a href="#" class="brand-logo center">TraCalory</a>
+                <ul class="right">
+                    <li><a href="#" class="clear-btn btn blue lighten-3 white-text">Clear All</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <br>
+<!--Form Card -->
+    <div class="container">
+        <div class="card">
+            <div class="card-content">
+                <span class="card-title mb-2">Add Meal / Food Item</span>
+                <form class="col">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input type="text" placeholder="Add Item" id="item-name">
+                            <label for="item-name">Meal</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input type="number" placeholder="Add Calory" id="item-calories">
+                            <label for="item-name">Calories</label>
+                        </div>
+                    </div>
+                        <button type="button" class="add-btn btn blue darken-3 white-text"><i class="medium material-icons">add</i>Add Meal</button>
+                        <button type="button" class="update-btn btn orange"><i class="small material-icons">update</i>Update Meal</button>
+                        <button type="button" class="delete-btn btn red"><i class="small material-icons">cancel</i>Delete Meal</button>
+                        <button type="button" class="back-btn btn grey right"><i class="medium material-icons">navigate_before</i>Back</button>
+                       
+                </form>
+            </div>
+        </div>
+        <!--Calories Count-->
+        <h3 class="center-align">Total Calories: <span class="total-calories">0</span></h3>
+        <!--Item List-->
+        <ul id="item-list" class="collection">
+           <!--
+             <li class="collection-item" id="item-0">
+                <strong>Steak Dinner: </strong> <em>1200 Calories</em>
+                <a href="#" class="secondary-content">
+                    <i class="edit-item small material-icons">edit</i>
+                </a>
+            </li>
+            <li class="collection-item" id="item-0">
+                <strong>Chicken: </strong> <em>142 Calories</em>
+                <a href="#" class="secondary-content">
+                    <i class="edit-item small material-icons">edit</i>
+                </a>
+            </li>
+            <li class="collection-item" id="item-0">
+                <strong>Turkey: </strong> <em>120 Calories</em>
+                <a href="#" class="secondary-content">
+                    <i class="edit-item small material-icons">edit</i>
+                </a>
+            </li>
+           -->
+        </ul>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+   <script src="app.js"></script>  
+</body>
+</html>
